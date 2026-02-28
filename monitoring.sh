@@ -27,7 +27,7 @@ kubectl get pods -n monitor
 #Step 7 create a service of grafana 
 
 #Grafana Service:- create a service of on 3000 port as a loadbalancer
-#kubectl expose deployment kube-prometheus-stack-grafana --port=3000 --target-port=3000 --name=grafana --type=LoadBalancer -n monitor
+kubectl expose deployment kube-prometheus-stack-grafana --port=3000 --target-port=3000 --name=grafana --type=LoadBalancer -n monitor
 
 #Step 8 verify service and unlock Grafana 
 kubectl get svc -n monitor   
