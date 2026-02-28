@@ -1,3 +1,4 @@
+#!/bin/bash
 kubectl apply -f nginx-deployment.yaml -n monitor
 kubectl get pods -n monitor
 kubectl describe deployment nginx-deployment -n monitor
